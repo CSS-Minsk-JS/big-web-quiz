@@ -1,4 +1,4 @@
-The repo is a [fork](https://github.com/CSS-Minsk-JS/big-web-quiz) from [Big Web Quiz](https://github.com/jakearchibald/big-web-quiz)
+The repo is a [fork](https://github.com/poalrom/big-web-quiz) from [Big Web Quiz](https://github.com/jakearchibald/big-web-quiz)
 
 # Development && Deploy
 
@@ -27,6 +27,22 @@ npm install # or yarn
 ```
 And don't forget to run mongodb
 
+## To local development
+
+```sh
+# build docker image
+npm run docker-build
+# run app on 1414 port and mount current dir into image
+npm run dev
+```
+
+Then if you change anything in project localy, it will change in image and trigger rebuild
+
+**Google oauth not work locally!**
+
+In local docker based development env variable `LOCAL` enabled by default.
+It enable login via username and allow using admin panel for user with login `admin`.
+
 ## To run
 
 ```sh
@@ -36,7 +52,7 @@ npm run serve
 ## Dokku setup
 
 1. Install Dokku
-1. Use vhosts, then:
+2. Use vhosts, then:
 
 ```sh
 sudo dokku plugin:install https://github.com/dokku/dokku-mongo.git mongo

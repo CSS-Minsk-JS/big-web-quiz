@@ -22,8 +22,8 @@ export default class Intro extends BoundComponent {
   render({ naiveLoginAllowed }) {
     return (
       <div class="intro">
-        <img class="intro__icon" width="250" src="/static/images/logo.svg" alt="CSS-Minsk-JS" />
-        <p>Welcome to The Big Web Quiz. CSS-Minsk-JS Edition!</p>
+        <img class="intro__icon" width="250" src="/static/images/logo.svg" alt="Yandex Quiz" />
+        <p>Welcome to The Big Web Quiz. Yandex Edition!</p>
         <Login naiveLoginAllowed={naiveLoginAllowed}/>
       </div>
     );

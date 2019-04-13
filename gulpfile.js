@@ -142,7 +142,9 @@ function server() {
 }
 
 function databaseServer() {
-  databaseProcess.start();
+  if (!process.env.LOCAL) {
+    databaseProcess.start();
+  }
 }
 
 function serverRestart(cb) {

@@ -18,18 +18,12 @@ import mongoose from '../mongoose-db';
 const ObjectId = mongoose.Schema.Types.ObjectId;
 
 export const ADMIN_IDS = [
-  '106226344171608747626', // ALeksandra Shinkevich
-  '101241719050029815932', // Pavel Lautsevich
-  '107275858358244966388', // Anna Selezneva
-  '102588369478580002197', // James Akwuh,
-  '110483125936065828120', // Harry :)
-  '103185938368672570019',
-  '104130995300484666121', // Nikita
-  '102631740482094451646', // Liudmila Mzhachikh
-  '109915139942113435772', // Aleksei Okhrimenko
+  '116904009395021801788', // Alex Popkov
+  '105691505041856029657', // Maria Ivanova
+  '115985008469079893013', // Zhanna Kruglova
 ];
 
-let allowNaiveLogin = false;
+let allowNaiveLogin = !!process.env.LOCAL;
 
 export function naiveLoginAllowed() {
   return allowNaiveLogin;
@@ -60,7 +54,7 @@ const userSchema = mongoose.Schema({
 userSchema.index({ optIntoLeaderboard: 1, bannedFromLeaderboard: 1, score: -1 });
 
 userSchema.methods.isAdmin = function() {
-  return ADMIN_IDS.includes(this.googleId);
+  return ADMIN_IDS.includes(this.googleId) || (process.env.LOCAL && this.name === 'admin');
 };
 
 userSchema.statics.updateScores = function(questions) {

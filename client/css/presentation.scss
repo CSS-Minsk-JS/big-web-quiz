@@ -42,8 +42,11 @@ html, body {
 
   &__logo {
     display: block;
-    width: 100%;
+    width: 50vh;
     height: 50vh;
+    margin: 0 auto;
+    background: #fff;
+    border: 30px solid #fff;
   }
 
   &__title {

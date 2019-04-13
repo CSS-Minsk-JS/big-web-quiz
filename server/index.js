@@ -106,6 +106,7 @@ router.use(multer().none());
 // Routes:
 router.get('/', home);
 router.get('/check', (req, res) => res.send('OK'));
+router.get('/google7718965f25f9f0dd.html', (req, res) => res.send('google-site-verification: google7718965f25f9f0dd.html'));
 router.get('/oauth2callback', handleLogin);
 router.get('/me.json', userJson);
 router.get('/initial-state.json', initialStateJson);

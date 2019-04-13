@@ -186,8 +186,8 @@ class App extends BoundComponent {
       return (
         <div class="opening-media">
           <div class="opening-media__container">
-            <img class="opening-media__logo" src="/static/images/logo.svg" alt="CSS-Minsk-JS"/>
-            <div class="opening-media__title">quiz.css-minsk-js.by</div>
+            <img class="opening-media__logo" src="/static/images/qr.svg" alt="Yandex-QUIZ"/>
+            <div class="opening-media__title">ya-quiz.ml</div>
             <div class={`blackout ${showBlackout ? 'blackout--show' : ''}`}/>
           </div>
         </div>

@@ -17,23 +17,47 @@
 
 
 /* latin */
+//@font-face {
+//  font-family: 'PTSans';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('PTSans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/ATKpv8nLYAKUYexo8iqqrg.woff2) format('woff2');
+//  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+//}
+//@font-face {
+//  font-family: 'PTSans';
+//  font-style: normal;
+//  font-weight: 700;
+//  src: local('PTSansBold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+//  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+//}
+
 @font-face {
-  font-family: 'PTSans';
+  font-family: "Yandex Sans Display";
+  src: url("fonts/Yandex Sans Display-Thin.eot");
+  src: url("fonts/Yandex Sans Display-Thin.eot?#iefix") format("embedded-opentype"),
+  url("fonts/Yandex Sans Display-Thin.woff2") format("woff2"),
+  url("fonts/Yandex Sans Display-Thin.woff") format("woff"),
+  url("fonts/Yandex Sans Display-Thin.ttf") format("truetype"),
+  url("fonts/Yandex Sans Display-Thin.svg#YandexSansDisplay-Thin") format("svg");
+  font-weight: 100;
   font-style: normal;
-  font-weight: 400;
-  src: local('PTSans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/ATKpv8nLYAKUYexo8iqqrg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-@font-face {
-  font-family: 'PTSans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('PTSansBold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+
+//html {
+//  font-family: PT Sans, sans-serif;
+//  color: #fff;
+//  font-size: 15px;
+//  line-height: 1.9;
+//  @media screen and (min-width: $mobile-boundry) {
+//    font-size: 16px;
+//  }
+//  height: 100%;
+//}
+
 html {
-  font-family: PT Sans, sans-serif;
+  font-family: "Yandex Sans Display", sans-serif;
   color: #fff;
   font-size: 15px;
   line-height: 1.9;

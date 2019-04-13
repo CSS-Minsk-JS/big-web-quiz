@@ -118,7 +118,7 @@ export default class App extends BoundComponent {
     return (
       <div class="app">
         <header class="page-header">
-          <div class="title">The Big Web Quiz. CSS-Minsk-JS Edition</div>
+          <div class="title">The Big Web Quiz. Yandex Edition</div>
           <LoginStatus
             server={server}
             user={user}
@@ -163,7 +163,7 @@ export default class App extends BoundComponent {
               <Intro key="intro" naiveLoginAllowed={naiveLoginAllowed}/>
           }
         </div>
-        <a class="privacy" href="https://github.com/CSS-Minsk-JS/big-web-quiz" target="_blank">Forked from The Big Web Quiz by Google</a>
+        <a class="privacy" href="https://github.com/poalrom/big-web-quiz" target="_blank">Forked from The Big Web Quiz by Google</a>
         {server &&
           <div class="img-preloads">
             <img src="/static/images/ic_check_circle_black_24px.svg" alt=""/>

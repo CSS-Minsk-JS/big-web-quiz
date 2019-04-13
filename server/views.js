@@ -76,7 +76,7 @@ export async function home(req, res) {
   res.send(
     indexTemplate({
       content: render(<App initialState={initialState} server={true} />),
-      title: 'The Big Web Quiz. CSS-Minsk-JS Edition.',
+      title: 'The Big Web Quiz. Yandex Edition.',
       inlineCss: await readFile(`${__dirname}/static/css/index-inline.css`),
       scripts: ['/static/js/main.js'],
       lazyCss: ['/static/css/index.css'],
